@@ -22,7 +22,7 @@ const Home = () => {
   };
 
 
-  const url = "http://localhost:5000/register"
+  const url = "https://skillband-event.herokuapp.com/register"
   const [data, setData] = useState({
     fullname: "",
     email: ""
