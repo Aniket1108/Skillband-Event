@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  --bg-color: #02b3e4;
+}
+
+.home {
+  background: url(../image/background.svg) no-repeat center center/cover;
+  height: 100vh;
+  min-height: 700px;
+  font-family: "Poppins", sans-serif;
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  padding: 10px;
+}
+.hamburger .line {
+  background-color: white;
+  width: 35px;
+  height: 4px;
+  margin: 4px;
+}
+.navbar-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #0c1014
+  ;
+}
+.skill-navbar {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  align-items: center;
+  position: relative;
+}
+.menu-items {
+  display: flex;
+  align-items: center;
+}
+.menu-items li {
+  color: white;
+  list-style: none;
+
+  margin: 0px 20px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+.book-btn {
+  text-transform: uppercase;
+  font-style: italic;
+  padding: 15px 0px;
+  font-weight: 500;
+  width: 200px;
+  margin: 0px 20px;
+  background-color: var(--bg-color);
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+}
+.know-btn {
+  text-transform: uppercase;
+  font-style: italic;
+  padding: 15px 0px;
+  font-weight: 500;
+  width: 200px;
+  background-color:black;
+  border: 2px solid var(--bg-color);
+  margin: 0px 20px;
+  outline: none;
+  color: white;
+}
+/* home */
+.timing-wrapper {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+  justify-content: center;
+}
+.timing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  word-spacing: 6px;
+}
+.intro{
+    margin: 30px 0px 50px 0px;
+    text-align: center;
+}
+.blue-text {
+  color: var(--bg-color);
+}
+h3 {
+  font-size: 25px;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.extra-large {
+  font-size: 5rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 1100px) {
+  .skill-navbar {
+    width: 100%;
+    padding: 10px 30px;
+  }
+  .hamburger {
+    display: flex;
+    cursor: pointer;
+    z-index: 3;
+  }
+  .menu-items {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    height: 100vh;
+    min-height: 400px;
+    justify-content: center;
+    background: black;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: all 1s ease-in-out;
+  }
+  .menu-items.open {
+    clip-path: polygon(0 1%, 100% 0%, 100% 99%, 0% 100%);
+  }
+  .menu-items li {
+    margin: 20px;
+  }
+}
+@media screen and (max-width: 600px){
+    .button-box{
+        display: flex;
+        flex-direction: column;
+    }
+    .book-btn,.know-btn{
+
+        margin: 15px 20px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .extra-large{
+        font-size: 3rem;
+    }
+    .skill-navbar{
+        padding: 10px 0px;
+    }
+}
+
+
+
+
+.popup, .overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;       
+}
+
+.overlay {
+  background: rgba(49,49,49,0.8);
+}
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2% 5%;
+  
+  border-radius: 24px;
+
+  max-width: 880px;
+  min-width: 300px;
+  min-height: 90%;
+  max-height: 90%;
+
+  background: #1A1B1C;
+  
+}
+.heading{
+  font: 600 48px Poppins;
+  color: white;
+  margin-top: 25px;
+}
+.content{
+  font: 500 22px Poppins;
+  color: white;
+  opacity: 0.56;
+}
+.form{
+
+  display: flex;
+  flex-direction: column;
+
+}
+.form input{
+  border: none;
+  outline: none;
+  border-bottom: 3px solid #C4C4C4;
+
+  background-color: transparent;
+  font: 400 22px  Poppins;
+  color: #F6F6F6;
+  
+  margin-bottom: 8%;
+  padding-left: 10px;
+  
+}
+.ticketbutton{
+  margin: auto;
+  width: 60%;
+  height: auto;
+  margin-top: 10px;
+  
+  border-radius: 7px;
+  border: none;
+  
+  background: #02B3E4;
+  font: 600 35px Poppins;
+  color: white;
+}
+
+.emailticket{
+  text-align: center;
+  font: 500 20px Poppins;
+  color: white;
+  opacity: 0.56;
+}
+
+.close-popup{
+  font: 600 16px Poppins;
+  opacity: 0.5;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1250px) {
+  .popup-content{
+      min-height: 70%;
+  }
+  .heading{
+      font: 600 40px Poppins;
+  }
+
+  
+}
+@media screen and (max-width: 768px) {
+  .popup-content{
+      min-height: 60%;
+  }
+
+  .heading{
+      font: 600 22px Poppins;
+  }
+  .content{
+      font-size: 16px;
+  }
+  .form input{
+      font-size: 16px;
+  }
+  .ticketbutton{
+      font-size: 22px;
+  }
+  .emailticket{
+      font-size: 14px;
+  }
+  
+}

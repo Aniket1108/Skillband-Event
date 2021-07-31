@@ -1,0 +1,98 @@
+body {
+  background-color: black;
+}
+* {
+  font-family: "Poppins", sans-serif;
+}
+.timing-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 110px 0px;
+}
+.timing-heading {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 40px 0px;
+}
+p {
+  color: white;
+}
+.dateh {
+  font-size: 8rem;
+  height: 150px;
+}
+.datep {
+  font-size: 3rem;
+}
+.date-time {
+  display: flex;
+  background-color: #242424;
+  border-radius: 25px;
+  width: 900px;
+  color: white;
+  padding: 50px 0px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.date {
+  background-color: #141313;
+  border-radius: 25px;
+  padding: 20px 50px 45px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 270px;
+  justify-content: center;
+}
+.time {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 270px;
+}
+.time1,
+.time2 {
+  background-color: #141313;
+  border-radius: 25px;
+  padding: 18px 40px;
+}
+
+.time-btn {
+  background-color: #242424;
+  color: var(--bg-color);
+  border: none;
+  outline: none;
+  padding: 8px 40px;
+  border-radius: 15px;
+  font-size: 25px;
+  font-weight: 700;
+}
+@media screen and (max-width: 950px) {
+  .date-time {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .date-time {
+    flex-direction: column;
+  }
+  .date {
+    margin-bottom: 35px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .time {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .time1,
+  .time2 {
+    padding: 18px 20px;
+  }
+}

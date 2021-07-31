@@ -1,0 +1,88 @@
+.Typewriter__cursor{
+display: none;
+}
+
+.Typewriter{
+    height: 60px;
+}
+.feature-heading{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 40px 0px;
+}
+.features-section{
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+}
+.first{
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+.second{
+    margin-left: 15px;
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.feature-one,.feature-two{
+    display: flex;
+    margin-bottom: 30px;
+}
+.feature-long, .feature-small{
+    background-color: #212121;
+    padding: 20px 40px;
+    border-radius: 25px;
+    font-size: 20px;
+    text-align: center;
+    margin: 0px 15px;
+}
+.feature-long{
+    width: 600px;
+    
+}
+.feature-small{
+    width: 400px;
+}
+@media screen and (max-width:1100px) {
+    .feature-one,.feature-two{
+        flex-direction: column;
+    }
+    .feature-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature-small,.feature-long{
+        width: 600px;
+        margin: 20px;
+    }
+    .feature-one{
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width:920px){
+    .features{
+        width: 94%;
+    }
+}
+@media screen and (max-width:650px)
+{
+    .feature-small,.feature-long{
+        width: 90%;
+    }
+    .first{
+        font-size: 25px;
+    }
+    .second{
+        font-size: 20px;
+    }
+    .speaker-heading,.feature-heading,.timing-heading{
+        font-size: 3.5rem;
+    }
+}
