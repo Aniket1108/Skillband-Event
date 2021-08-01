@@ -10,7 +10,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 110px 0px;
+  padding: 110px 0px; 
 }
 .timing-heading {
   color: white;
@@ -57,6 +57,7 @@ p {
 }
 .time1,
 .time2 {
+
   background-color: #141313;
   border-radius: 25px;
   padding: 18px 40px;
@@ -67,11 +68,21 @@ p {
   color: var(--bg-color);
   border: none;
   outline: none;
-  padding: 8px 40px;
+  padding: 0 40px;
   border-radius: 15px;
   font-size: 25px;
   font-weight: 700;
+  margin-left: 10px;
+
+
 }
+.start-time span, .end-time span {
+  font-size: 20px;
+}
+.time2, .time1{
+  display: flex;
+}
+
 @media screen and (max-width: 950px) {
   .date-time {
     width: 90%;

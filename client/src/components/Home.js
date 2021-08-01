@@ -58,10 +58,10 @@ const Home = () => {
           <img src={brand} alt="logo" />
           <ul className={menuOpen ? 'menu-items open' : 'menu-items'}>
             <Link to="timing">
-            <li>Timings</li> 
-            </Link> 
+              <li>Timings</li>
+            </Link>
             <Link to="speaker">
-            <li>Speakers</li>
+              <li>Speakers</li>
             </Link>
             <Link to="features">
               <li>Features</li>
@@ -91,7 +91,11 @@ const Home = () => {
         </div>
         <div className='button-box'>
           <button className="book-btn" onClick={togglePopup}>BOOK FREE TICKET</button>
-          <button className="know-btn">Know more</button>
+          
+          <Link to="speaker">
+            <button className="know-btn">Know more</button>
+          </Link>
+
         </div>
       </div>
 
